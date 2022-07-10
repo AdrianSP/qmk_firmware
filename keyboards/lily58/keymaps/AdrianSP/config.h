@@ -12,8 +12,8 @@
 #define TAPPING_TOGGLE 2
 
 // choose IS_LEFT or IS_RIGHT for compilation and flash firmware
-#define IS_LEFT 1
-//#define IS_RIGHT 1
+//#define IS_LEFT 1
+#define IS_RIGHT 1
 
 // logo glitch
 #define WITH_GLITCH

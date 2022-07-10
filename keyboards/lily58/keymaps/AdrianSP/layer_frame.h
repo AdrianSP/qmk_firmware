@@ -9,8 +9,9 @@
 #define LAYER_NAME_2 "GLO"
 #define LAYER_NAME_3 "LOW"
 #define LAYER_NAME_4 "RIZ"
+#define LAYER_NAME_5 "ADJ"
 
-enum layer_number { _COLEMAK = 0, _GAME, _G_LOW, _LOWER, _RAISE };
+enum layer_number { _COLEMAK = 0, _GAME, _G_LOW, _LOWER, _RAISE, _ADJUST };
 
 void render_gears(void);
 void render_layer_frame(gui_state_t t);
