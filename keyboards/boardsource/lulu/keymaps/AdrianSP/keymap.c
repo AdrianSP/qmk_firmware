@@ -1,6 +1,9 @@
+// Copyright 2022 Cole Smith <cole@boadsource.xyz>
+// SPDX-License-Identifier: GPL-2.0-or-later
+
 #include QMK_KEYBOARD_H
 
-enum layer_number {
+enum layers {
     _COLEMAK,
     _GAME,
     _G_LOW,

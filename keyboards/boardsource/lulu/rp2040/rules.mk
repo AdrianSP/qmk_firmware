@@ -1,2 +1,3 @@
 SERIAL_DRIVER = vendor
 WS2812_DRIVER = vendor
+RGB_MATRIX_ENABLE = no

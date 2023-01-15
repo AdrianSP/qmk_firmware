@@ -1,55 +1,46 @@
-// Copyright 2021 Nicolas Druoton (druotoni)
-// Copyright 2012 Jun Wako <wakojun@gmail.com>
-// Copyright 2015 Jack Humbert
-// SPDX-License-Identifier: GPL-2.0-or-later
+/*
+This is the c configuration file for the keymap
+
+Copyright 2012 Jun Wako <wakojun@gmail.com>
+Copyright 2015 Jack Humbert
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 #pragma once
 
+/* Select hand configuration */
+
 #define MASTER_LEFT
-#define OLED_DRIVER_ENABLE
+// #define MASTER_RIGHT
+// #define EE_HANDS
 
-// tapping toggle for my layers
-#define TAPPING_TOGGLE 2
+#define TAPPING_FORCE_HOLD
+#define TAPPING_TERM 100
 
-// choose IS_LEFT or IS_RIGHT for compilation and flash firmware
-//#define IS_LEFT 1
-#define IS_RIGHT 1
+#undef RGBLED_NUM
+#define RGBLIGHT_ANIMATIONS
+#define RGBLED_NUM 27
+#define RGBLIGHT_LIMIT_VAL 120
+#define RGBLIGHT_HUE_STEP 10
+#define RGBLIGHT_SAT_STEP 17
+#define RGBLIGHT_VAL_STEP 17
 
-// logo glitch
-#define WITH_GLITCH
-// boot sequence
-#define WITH_BOOT
-
-// custom transport for displaying on both side
-#define SPLIT_TRANSACTION_IDS_USER USER_SYNC_A
-
-// custom font
-#ifdef OLED_FONT_H
-#    undef OLED_FONT_H
-#endif
-#define OLED_FONT_H "navi_font.c"
-#undef OLED_FONT_END
-#define OLED_FONT_END 125
-
-// more space
-#define NO_ACTION_MACRO
-#define NO_ACTION_FUNCTION
-#define NO_ACTION_ONESHOT
-#define DISABLE_LEADER
-
-// ???
-#undef LOCKING_SUPPORT_ENABLE
-#undef LOCKING_RESYNC_ENABLE
-
-// small layer state
-#define LAYER_STATE_8BIT
-
-// no debug or trace
-#ifndef NO_DEBUG
-#    define NO_DEBUG
-#endif
-#if !defined(NO_PRINT) && !defined(CONSOLE_ENABLE)
-#    define NO_PRINT
-#endif 
-
-
+// Underglow
+/*
+#undef RGBLED_NUM
+#define RGBLED_NUM 14    // Number of LEDs
+#define RGBLIGHT_ANIMATIONS
+#define RGBLIGHT_SLEEP
+*/
