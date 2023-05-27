@@ -67,11 +67,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                    '---------------------------'          '---------------------------'
  */
     [_G_LOW] = LAYOUT(
-    _______,  KC_6,  KC_7,  KC_8,     KC_9,     KC_0,                         XXXXXXX,      XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,   XXXXXXX,
-    _______,  KC_Y,  KC_U,  KC_I,     KC_O,     KC_P,                         XXXXXXX,      XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,   XXXXXXX,
-    _______,  KC_H,  KC_J,  KC_K,     KC_L,     KC_SCLN,                      XXXXXXX,      XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,   XXXXXXX,
-    _______,  KC_N,  KC_M,  KC_COMM,  KC_DOT,   KC_SLSH,  KC_TILD,  KC_GRV,   XXXXXXX,      KC_LEFT,  KC_UP,    KC_DOWN,  KC_RIGHT,  XXXXXXX,
-                            _______,  _______,  _______,  _______,  _______,  MO(_ADJUST),  _______,  _______
+    _______,  KC_F1,  KC_F2, KC_F3,    KC_F4,    KC_F5,                        XXXXXXX,      XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,   XXXXXXX,
+    _______,  KC_Y,   KC_U,  KC_I,     KC_O,     KC_P,                         XXXXXXX,      XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,   XXXXXXX,
+    _______,  KC_H,   KC_J,  KC_K,     KC_L,     KC_SCLN,                      XXXXXXX,      XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,   XXXXXXX,
+    _______,  KC_N,   KC_M,  KC_COMM,  KC_DOT,   KC_SLSH,  KC_TILD,  KC_GRV,   XXXXXXX,      KC_LEFT,  KC_UP,    KC_DOWN,  KC_RIGHT,  XXXXXXX,
+                             _______,  _______,  _______,  _______,  _______,  MO(_ADJUST),  _______,  _______
     ),
 
 /* LOWER
